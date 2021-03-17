@@ -1,0 +1,36 @@
+#N canvas -9 -9 1920 1146 12;
+#X obj 270 140 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 270 181 metro 1000;
+#X obj 491 290 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 532 290 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 552 290 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 471 290 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 450 290 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 511 290 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 450 234 select 0 1 2 3 4 5;
+#X obj 270 275 send counter;
+#X obj 450 139 receive counter;
+#X floatatom 450 187 5 0 0 0 - - -;
+#X obj 270 227 random 6;
+#X text 275 100 number objects aren't working;
+#X text 524 186 random value;
+#X floatatom 337 139 5 0 0 0 - - -;
+#X connect 0 0 1 0;
+#X connect 1 0 12 0;
+#X connect 8 0 6 0;
+#X connect 8 1 5 0;
+#X connect 8 2 2 0;
+#X connect 8 3 7 0;
+#X connect 8 4 3 0;
+#X connect 8 5 4 0;
+#X connect 10 0 11 0;
+#X connect 11 0 8 0;
+#X connect 12 0 9 0;
+#X connect 15 0 1 1;

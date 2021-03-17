@@ -1,0 +1,22 @@
+#N canvas 512 103 1232 840 12;
+#X obj 107 172 gemwin;
+#X msg 43 74 create;
+#X msg 107 74 destroy;
+#X obj 13 76 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#X msg 223 73 reset;
+#X obj 390 190 gemhead;
+#X floatatom 429 253 5 0 0 0 - - -;
+#X msg 284 176 draw fill;
+#X msg 284 212 draw line;
+#X msg 284 243 draw point;
+#X obj 390 291 square;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 0;
+#X connect 4 0 0 0;
+#X connect 5 0 10 0;
+#X connect 6 0 10 1;
+#X connect 7 0 10 0;
+#X connect 8 0 10 0;
+#X connect 9 0 10 0;

@@ -1,0 +1,36 @@
+#N canvas 18 96 1232 840 12;
+#X obj 107 172 gemwin;
+#X msg 43 74 create;
+#X msg 107 74 destroy;
+#X obj 13 76 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+;
+#X msg 247 100 reset;
+#X obj 390 190 gemhead;
+#X msg 284 176 draw fill;
+#X msg 284 212 draw line;
+#X msg 284 243 draw point;
+#X floatatom 410 225 5 0 0 0 - - -;
+#X floatatom 429 259 5 0 0 0 - - -;
+#X obj 87 267 gemhead;
+#X obj 87 310 world_light;
+#X obj 390 291 sphere;
+#X obj 248 23 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X msg 248 62 lighting \$1;
+#X msg 161 235 1 1 0;
+#X msg 176 270 0 0.2 0.7;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 0;
+#X connect 4 0 0 0;
+#X connect 5 0 13 0;
+#X connect 6 0 13 0;
+#X connect 7 0 13 0;
+#X connect 8 0 13 0;
+#X connect 9 0 13 1;
+#X connect 10 0 13 2;
+#X connect 11 0 12 0;
+#X connect 14 0 15 0;
+#X connect 15 0 0 0;
+#X connect 16 0 12 1;
+#X connect 17 0 12 1;
