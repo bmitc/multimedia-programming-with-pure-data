@@ -10,14 +10,15 @@ The book was written targeting Pd-extended. However, Pd-extended is no longer ma
 3. Select **Help** -> **Find Externals**
 4. Search for "gem"
 5. Select the Gem library with the most recent release date.
-6. Select **Yes** when asked to install Gem to your `Pd/externals` directory
+6. Select **Yes** if or when asked to install Gem to your `Pd/externals` directory (you may not be asked this)
 7. Wait until the progress bar becomes full
-8. Close the **Find externals** window
-9. Select **File** -> **Preferences** -> **Startup...**
-10. Select **New...** and enter in `Gem`. Please note that the case is important. Select **Ok**.
-11. Select **Ok** again to exit out of the **Pd libraries to load on startup window**
-12. Restart Pure Data
-13. Something like the following should be in your console window:
+    * You should see a message `[deken] Successfully installed Gem!` in the main Pd window's console
+9. Close the **Find externals** window
+10. Select **File** -> **Preferences** -> **Startup...**
+11. Select **New...** and enter in `Gem`. Please note that the case is important. Select **Ok**.
+12. Select **Ok** again to exit out of the **Pd libraries to load on startup window**
+13. Restart Pure Data
+14. Something like the following should be in your console window:
     
     ```
     GEM: Graphics Environment for Multimedia
