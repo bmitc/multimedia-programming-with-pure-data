@@ -9,10 +9,12 @@ The book was written targeting Pd-extended. However, Pd-extended is no longer ma
 2. After installation, open Pure Data
 3. Select **Help** -> **Find Externals**
 4. Search for "gem"
-5. Select the Gem library with the most recent release date.
-6. Select **Yes** if or when asked to install Gem to your `Pd/externals` directory (you may not be asked this)
+5. Select the Gem library with the most recent release date (0.94 at time of writing) and click **Install**
+6. Select **Yes** if or when asked to install Gem to your `Pd/externals` directory (you may not be asked this).
+    * If you run Pure Data directory after running the installer, it's possible that Pure Data has not created a patches and externals directory. In this case and on my machine, the default directory for the prompt `Install externals to directory` is `C:\Program Files\Pd\bin`. (I installed Pure Data via the Windows installer.) The setup described here failed when I chose this path.
+    * However, when starting up Pure Data outside of luanching initially from the installer, Pure Data should ask you to create a directory when starting up for saving patches and externals. If happens, click yes, and then the default directory for externals is `C:\Users\<username>\Documents\Pd\externals`.
 7. Wait until the progress bar becomes full
-    * You should see a message `[deken] Successfully installed Gem!` in the main Pd window's console
+    * You should see a message `[deken] Successfully installed 'Gem'!` in the main Pd window's console
 9. Close the **Find externals** window
 10. Select **File** -> **Preferences** -> **Startup...**
 11. Select **New...** and enter in `Gem`. Please note that the case is important. Select **Ok**.
