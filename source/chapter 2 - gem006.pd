@@ -1,4 +1,4 @@
-#N canvas 54 141 1181 883 12;
+#N canvas 461 108 1181 883 12;
 #X obj 28 20 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 68 64 gemwin;
 #X msg 68 20 create;
