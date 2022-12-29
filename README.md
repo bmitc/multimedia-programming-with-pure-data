@@ -3,7 +3,20 @@ Pure Data code from the book [_Multimedia Programming with Pure Data_](https://w
 
 ## Installing Pure Data
 
-The book was written targeting Pd-extended. However, Pd-extended is no longer maintained and is deprecated. It has fallen behind Pd Vanilla. Since Pd-extended was Pd Vanilla plus some libraries, all we need to do is install Pd Vanilla and then the Gem library. So please don't worry about the reviews that state the library the book uses is out of data, since it can easily be installed into Pd Vanilla.
+The book was written targeting Pd-extended. However, Pd-extended is no longer maintained and is deprecated. It has fallen behind Pd Vanilla. Since Pd-extended was Pd Vanilla plus some libraries, all we need to do is install Pd Vanilla and then the needed libraries. So please don't worry about the reviews that state the library the book uses is out of data, since the required libraries that are used in the book can easily be installed into Pd Vanilla.
+
+### Libraries
+
+The required libraries (also known as externals) to get through the book's code are:
+
+* `Gem`: This is for the graphics objects.
+* `cyclone`: This is for the `counter` object used first in Chapter 1.
+
+Note: capitalization matters when installing.
+
+### Installing a library
+
+The following runs through installing Pure Data and the Gem library. Follow the same procedure for the `cyclone` library as for the `Gem` library described below.
 
 1. [Install Pd Vanilla](https://puredata.info/)
 2. After installation, open Pure Data
@@ -45,3 +58,30 @@ The book was written targeting Pd-extended. However, Pd-extended is no longer ma
     GEM: model loading plugins: ASSIMP3 OBJ
     GEM: video capture plugins: VIDS decklink vnc
     ```
+
+Once you have installed the `cyclone` library and added it to startup (be sure to add it as all lowercase), then you should additionally see the following printed out at startup:
+
+```
+--------------------------------------------------------------------
+:: Cyclone 0.6-1; Released june 8th 2022
+:: License: BSD-3-Clause (aka Revised BSD License)
+:: Copyright © 2003-2021 - Krzysztof Czaja, Hans-Christoph Steiner,
+:: Fred Jan Kraan, Alexandre Porres, Derek Kwan, Matt Barber
+:: and others.
+:: -----------------------------------------------------------------
+:: Cyclone 0.6-1 needs at least Pd 0.52-0
+             (you have 0.53-0, you're good!)
+:: Loading the cyclone library did the following:
+::   - A) Loaded the non alphanumeric objects, which are:
+:: [!-], [!-~], [!/], [!/~], [!=~], [%~], [+=~], [<=~], [<~],
+:: [==~], [>=~] and [>~]
+::   - B) Added C:/Users/bmitc/Documents/Pd/externals/cyclone
+:: to Pd's path so the other objects can be loaded too
+:: but use [declare -path cyclone] to guarantee search priority
+:: in the patch
+--------------------------------------------------------------------
+```
+
+Here's a screenshot of my startup configuration:
+
+![image](https://user-images.githubusercontent.com/65685447/209909925-debed46f-42b8-42b3-a1f9-967417428196.png)
