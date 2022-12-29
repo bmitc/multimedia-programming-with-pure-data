@@ -2,8 +2,7 @@
 #X obj 237 105 random 6;
 #X text 61 111 between 0 and 5;
 #X text 61 96 Generates random number;
-#X obj 237 64 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
-#000000;
+#X obj 237 64 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X floatatom 237 151 5 0 0 0 - - - 0;
 #X connect 0 0 4 0;
 #X connect 3 0 0 0;

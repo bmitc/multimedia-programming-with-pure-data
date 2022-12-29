@@ -9,7 +9,7 @@
 #X msg 265 26 dimen 640 480;
 #X msg 265 53 title Pure_Data;
 #X msg 265 79 color 0 0.7 1;
-#X text 273 151;
+#X text 273 151 comment;
 #X text 273 169 1) Create;
 #X text 273 185 2) Toggle;
 #X text 273 202 3) ...;
