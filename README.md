@@ -10,7 +10,7 @@ The book was written targeting Pd-extended. However, Pd-extended is no longer ma
 The required libraries (also known as externals) to get through the book's code are:
 
 * `Gem`: This is for the graphics objects.
-* `cyclone`: This is for the `counter` object used first in Chapter 1.
+* `cyclone`: This is for the `counter` object used first in Chapter 2.
 
 Note: capitalization matters when installing.
 
