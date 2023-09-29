@@ -25,12 +25,12 @@ The following runs through installing Pure Data and the Gem library. Follow the 
 5. Select the Gem library with the most recent release date (0.94 at time of writing) and click **Install**
 6. Select **Yes** if or when asked to install Gem to your `Pd/externals` directory (you may not be asked this).
     * If you run Pure Data directory after running the installer, it's possible that Pure Data has not created a patches and externals directory. In this case and on my machine, the default directory for the prompt `Install externals to directory` is `C:\Program Files\Pd\bin`. (I installed Pure Data via the Windows installer.) The setup described here failed when I chose this path.
-    * However, when starting up Pure Data outside of luanching initially from the installer, Pure Data should ask you to create a directory when starting up for saving patches and externals. If happens, click yes, and then the default directory for externals is `C:\Users\<username>\Documents\Pd\externals`.
+    * However, when starting up Pure Data outside of launching initially from the installer, Pure Data should ask you to create a directory when starting up for saving patches and externals. If happens, click yes, and then the default directory for externals is `C:\Users\<username>\Documents\Pd\externals`.
 7. Wait until the progress bar becomes full
     * You should see a message `[deken] Successfully installed 'Gem'!` in the main Pd window's console
 9. Close the **Find externals** window
-10. Select **File** -> **Preferences** -> **Startup...**
-11. Select **New...** and enter in `Gem`. Please note that the case is important. Select **Ok**.
+10. Select **File** -> **Preferences** -> **Edit Preferences...** -> **Startup...**
+11. Select **New...**, type in `Gem`, and then hit **Enter** on your keyboard. Please note that the case is important. Select **Ok**. You could get an error if you just type `Gem` and then immediately select **Ok**.
 12. Select **Ok** again to exit out of the **Pd libraries to load on startup window**
 13. Restart Pure Data
 14. Something like the following should be in your console window:
@@ -58,6 +58,12 @@ The following runs through installing Pure Data and the Gem library. Follow the 
     GEM: model loading plugins: ASSIMP3 OBJ
     GEM: video capture plugins: VIDS decklink vnc
     ```
+
+    If you receive a message like:
+    ```
+    Please (re)install the NewTek NDI Runtimes to use this plugin.
+    ```
+    then you can ignore it unless you want or need NDI.
 
 Once you have installed the `cyclone` library and added it to startup (be sure to add it as all lowercase), then you should additionally see the following printed out at startup:
 
